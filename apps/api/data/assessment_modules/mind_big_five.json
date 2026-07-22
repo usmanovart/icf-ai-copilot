@@ -1,0 +1,92 @@
+{
+  "module_id": "mind_big_five",
+  "domain": "mind",
+  "title": "Personality & Thinking Style",
+  "description": "A brief, non-diagnostic look at five broad dimensions of how you think, work, and engage with the world. Based on evidence-informed Big Five research.",
+  "disclaimer": "This is a reflective self-assessment, not a clinical or diagnostic instrument. Results are used only to personalise your AI recommendations.",
+  "estimated_minutes": 5,
+  "scoring": "likert_mean_per_facet",
+  "facets": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+  "questions": [
+    {
+      "key": "bf_o1",
+      "facet": "openness",
+      "text": "I enjoy exploring new ideas and learning about unfamiliar topics.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bf_o2",
+      "facet": "openness",
+      "text": "I prefer routine over variety and change.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": true
+    },
+    {
+      "key": "bf_c1",
+      "facet": "conscientiousness",
+      "text": "I usually plan ahead and follow through on my intentions.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bf_c2",
+      "facet": "conscientiousness",
+      "text": "I often leave tasks unfinished or struggle to stay organised.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": true
+    },
+    {
+      "key": "bf_e1",
+      "facet": "extraversion",
+      "text": "I feel energised after spending time with groups of people.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bf_e2",
+      "facet": "extraversion",
+      "text": "I tend to take the lead in social or professional situations.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bf_a1",
+      "facet": "agreeableness",
+      "text": "I prioritise others' needs and try to avoid conflict.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bf_a2",
+      "facet": "agreeableness",
+      "text": "I find it easy to trust people I have recently met.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bf_n1",
+      "facet": "neuroticism",
+      "text": "I often feel anxious, worried, or emotionally reactive under pressure.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bf_n2",
+      "facet": "neuroticism",
+      "text": "I stay calm and composed in stressful situations.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": true
+    }
+  ]
+}
