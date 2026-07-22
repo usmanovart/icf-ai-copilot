@@ -1,0 +1,91 @@
+{
+  "module_id": "work_capacity_burnout",
+  "domain": "work_capacity",
+  "title": "Work Capacity & Burnout Risk",
+  "description": "Assesses your current energy levels and burnout risk indicators across three dimensions from Maslach burnout research: exhaustion, depersonalisation, and personal efficacy.",
+  "disclaimer": "This is a non-diagnostic self-reflection tool. It does not constitute a clinical burnout assessment. If you are experiencing significant work-related distress, please speak to a healthcare professional or HR specialist.",
+  "estimated_minutes": 4,
+  "scoring": "mean_per_dimension",
+  "dimensions": ["exhaustion", "depersonalisation", "efficacy", "energy", "focus"],
+  "risk_thresholds": {
+    "exhaustion": {"low": [0, 1.8], "moderate": [1.9, 3.2], "high": [3.3, 5.0]},
+    "depersonalisation": {"low": [0, 1.5], "moderate": [1.6, 2.8], "high": [2.9, 5.0]},
+    "efficacy": {"low": [3.5, 5.0], "moderate": [2.5, 3.4], "high": [0, 2.4]}
+  },
+  "questions": [
+    {
+      "key": "bu_ex1",
+      "dimension": "exhaustion",
+      "text": "I feel emotionally drained by my work.",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bu_ex2",
+      "dimension": "exhaustion",
+      "text": "I feel used up at the end of a workday.",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bu_ex3",
+      "dimension": "exhaustion",
+      "text": "Working all day is really a strain for me.",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bu_dp1",
+      "dimension": "depersonalisation",
+      "text": "I have become less interested in my work since I started this role.",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bu_dp2",
+      "dimension": "depersonalisation",
+      "text": "I doubt the significance of my work.",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": false
+    },
+    {
+      "key": "bu_ef1",
+      "dimension": "efficacy",
+      "text": "I feel I am making a meaningful contribution through my work.",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": true
+    },
+    {
+      "key": "bu_ef2",
+      "dimension": "efficacy",
+      "text": "I can effectively solve problems that arise in my work.",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": true
+    },
+    {
+      "key": "en_1",
+      "dimension": "energy",
+      "text": "How would you rate your physical energy on a typical workday?",
+      "type": "scale10",
+      "min_label": "Very low",
+      "max_label": "Very high",
+      "reverse_scored": false
+    },
+    {
+      "key": "fo_1",
+      "dimension": "focus",
+      "text": "How well can you sustain focused attention for more than 30 minutes at a time?",
+      "type": "scale10",
+      "min_label": "Very poorly",
+      "max_label": "Very well",
+      "reverse_scored": false
+    }
+  ]
+}
