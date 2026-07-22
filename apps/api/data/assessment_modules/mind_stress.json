@@ -1,0 +1,59 @@
+{
+  "module_id": "mind_stress",
+  "domain": "mind",
+  "title": "Stress & Cognitive Load",
+  "description": "A brief check on how much stress and mental pressure you have been experiencing recently. Inspired by the Perceived Stress Scale (PSS-10).",
+  "disclaimer": "This is a self-reflection tool, not a clinical stress assessment. If you are experiencing significant distress, please speak to a qualified mental health professional.",
+  "estimated_minutes": 3,
+  "scoring": "sum_normalised",
+  "score_range": [0, 40],
+  "thresholds": {
+    "low": [0, 13],
+    "moderate": [14, 26],
+    "high": [27, 40]
+  },
+  "questions": [
+    {
+      "key": "ps_1",
+      "text": "In the last month, how often have you felt that things were out of your control?",
+      "type": "likert5",
+      "labels": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"],
+      "reverse_scored": false
+    },
+    {
+      "key": "ps_2",
+      "text": "In the last month, how often have you felt confident in your ability to handle problems?",
+      "type": "likert5",
+      "labels": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"],
+      "reverse_scored": true
+    },
+    {
+      "key": "ps_3",
+      "text": "In the last month, how often have you felt overwhelmed by the amount you have to do?",
+      "type": "likert5",
+      "labels": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"],
+      "reverse_scored": false
+    },
+    {
+      "key": "ps_4",
+      "text": "In the last month, how often have you been able to control irritations in your life?",
+      "type": "likert5",
+      "labels": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"],
+      "reverse_scored": true
+    },
+    {
+      "key": "cl_1",
+      "text": "How difficult is it currently to focus on one task without your mind wandering?",
+      "type": "likert5",
+      "labels": ["Very easy", "Easy", "Neutral", "Difficult", "Very difficult"],
+      "reverse_scored": false
+    },
+    {
+      "key": "cl_2",
+      "text": "How often do you feel mentally drained by the end of a typical workday?",
+      "type": "likert5",
+      "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+      "reverse_scored": false
+    }
+  ]
+}
