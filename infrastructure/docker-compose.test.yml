@@ -1,0 +1,12 @@
+services:
+  db_test:
+    image: pgvector/pgvector:pg16
+    container_name: icf_postgres_test
+    environment:
+      POSTGRES_USER: icf_test
+      POSTGRES_PASSWORD: icf_test
+      POSTGRES_DB: icf_test
+    ports:
+      - "5433:5432"
+    tmpfs:
+      - /var/lib/postgresql/data
