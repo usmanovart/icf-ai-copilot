@@ -1,0 +1,84 @@
+{
+  "module_id": "goal_clarity",
+  "domain": "goal",
+  "title": "Goals, Values & Priorities",
+  "description": "Explores how clear and aligned your goals are, and how much ownership you feel over them. Grounded in Goal-Setting Theory and Self-Determination Theory (SDT).",
+  "disclaimer": "This is a reflective planning tool, not a career or life counselling assessment.",
+  "estimated_minutes": 4,
+  "scoring": "mean_per_dimension",
+  "dimensions": ["clarity", "autonomy", "competence", "relatedness", "commitment"],
+  "questions": [
+    {
+      "key": "gc_cl1",
+      "dimension": "clarity",
+      "text": "I can clearly describe my top 3 priorities for the next 3 months.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_cl2",
+      "dimension": "clarity",
+      "text": "My daily actions are closely connected to my most important long-term goals.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_au1",
+      "dimension": "autonomy",
+      "text": "I pursue my current goals because they genuinely matter to me — not because others expect it.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_au2",
+      "dimension": "autonomy",
+      "text": "I feel free to choose how I spend my time and energy.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_co1",
+      "dimension": "competence",
+      "text": "I feel capable of achieving the goals I have set for myself.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_co2",
+      "dimension": "competence",
+      "text": "I have the skills and resources I need to make meaningful progress right now.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_re1",
+      "dimension": "relatedness",
+      "text": "The people around me support the direction I am heading.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_cm1",
+      "dimension": "commitment",
+      "text": "I am willing to make sacrifices to achieve my most important goal.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    },
+    {
+      "key": "gc_vl1",
+      "dimension": "clarity",
+      "text": "My current goals reflect what I truly value in life.",
+      "type": "likert5",
+      "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"],
+      "reverse_scored": false
+    }
+  ]
+}
