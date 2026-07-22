@@ -1,6 +1,15 @@
 {
-  "buildCommand": "npm install --prefix apps/web && npm run build --prefix apps/web",
-  "outputDirectory": "apps/web/.next",
-  "installCommand": "echo 'skip'",
-  "framework": "nextjs"
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/web/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "apps/web/$1"
+    }
+  ]
 }
